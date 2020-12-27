@@ -277,3 +277,9 @@
   transition: .2s linear;
   background: #707375;
 }
+/* ============
+                exclusive
+                        ========== */
+.exclusive img {
+  background: rgba(23, 23, 23, 0.5);
+}
