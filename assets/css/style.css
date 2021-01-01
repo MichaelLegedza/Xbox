@@ -160,29 +160,30 @@
   margin-bottom: 12px;
 }
 .intro__title {
-  font-size: 2.25rem;
-  line-height: 2rem;
+  font-size: 36px;
+  line-height: 42px;
 }
 .intro__subtitle {
-  font-size: 1.5rem;
-  line-height: 1.33rem;
+  font-size: 24px;
+  line-height: 28px;
 }
 .intro__comment {
   max-width: 390px;
   margin-bottom: 27px;
-  font-size: 1rem;
-  line-height: 1.14rem;
+  line-height: 24px;
   color: rgb(255, 255, 255, 0.7);
+}
+.link {
+  color: #ffffff;
+  background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
+  border-radius: 4px;
 }
 .intro__link {
   min-width: 138px;
   min-height: 38px;
   padding: 8px 24px 9px 19px;
-  color: #ffffff;
-  background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
-  border-radius: 4px;
 }
-.intro__link:hover {
+.link:hover {
   transition: .2s linear;
   background: #8DD83D;
 }
@@ -208,21 +209,21 @@
 }
 .highlights__caption {
   text-align: center;
-  font-size: 3rem;
-  line-height: 2.6rem;
+  font-size: 48px;
+  line-height: 56px;
   color: #ffffff;
 }
 .highlights__caption span {
   display: flex;
   margin-top: 10px;
-  font-size: 2.25rem;
-  line-height: 2rem;
+  font-size: 36px;
+  line-height: 42px;
   font-weight: 400;
 }
 .highlights__card {
   display: flex;
 }
-.highlights__column {
+.column {
   width: 320px;
   height: 420px;
   background-color: #ffffff;
@@ -232,7 +233,7 @@
 .highlights__column:not(:last-child) {
   margin-right: 64px;
 }
-.highlights__column img {
+.column img {
   margin-bottom: 20px;
 }
 .highlights__column--mixer img,
@@ -249,18 +250,18 @@
   padding: 0px 21px;
 }
 .brand,
-.brand__features {
+.features {
   font-weight: 500;
   color: #435766;
 }
 .brand {
-  margin-bottom: 15px;
-  font-size: 1.125rem;
+  margin-bottom: 16px;
+  font-size: 18px;
 }
-.brand__features {
+.features {
+  font-size: 24px;
+  line-height: 28px;
   margin-bottom: 40px;
-  font-size: 1.5rem;
-  line-height: 1.3rem;
 }
 .active__link {
   display: flex;
@@ -275,11 +276,204 @@
 }
 .active__link:hover {
   transition: .2s linear;
-  background: #707375;
+  background: linear-gradient(45deg, rgb(141, 216, 61), rgb(20, 236, 182));
 }
 /* ============
                 exclusive
                         ========== */
-.exclusive img {
-  background: rgba(23, 23, 23, 0.5);
+.exclusive {
+  background: url(../img/callofduty.jpg) no-repeat;
+  background-size: cover;
+  padding: 100px 0px 140px;
+  position: relative;
+}
+.exclusive::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(23, 23, 23, 0.5);
+}
+.exclusive__games {
+  position: relative;
+  text-align: center;
+}
+.exclusive__title {
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.games__slide {
+  display: flex;
+  margin-left: 66px;
+  margin: 53px 0px 74px 66px;
+}
+.games__column {
+  margin-right: 29px;
+}
+.games__column:hover {
+  transition: .5s;
+  transform: scale(1.1);
+}
+.games__features {
+  font-size: 21px;
+  line-height: 24px;
+}
+.column__wrapper--games {
+  padding: 0px 40px 0px 21px;
+}
+.exclusive img:last-child {
+  width: 318px;
+  height: 180px;
+}
+.exclusive__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 207px;
+  height: 53px;
+  font-size: 21px;
+  line-height: 21px;
+}
+/* ============
+                design
+                        ========== */
+.design {
+  background: url(../img/design.jpg) no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 114px 0px 145px;
+}
+.design::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: radial-gradient(100% 100% at 50% 0%, rgba(193, 255, 127, 0.1) 0%, rgba(141, 216, 61, 0.1) 100%);
+}
+.design__block {
+  position: relative;
+  max-width: 500px;
+  color: #ffffff;
+}
+.design__title {
+  margin-bottom: 9px;
+  font-size: 48px;
+  line-height: 56px;
+}
+.design__description {
+  margin-bottom: 37px;
+  font-size: 24px;
+  line-height: 28px;
+}
+.design .block__links {
+  display: flex;
+}
+.design__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.design__link--yours {
+  width: 207px;
+  height: 60px;
+  margin-right: 15px;
+}
+.design__link--explore {
+  width: 278px;
+  height: 60px;
+}
+/* ============
+                footer
+                        ========== */
+.footer {
+  background-color: #373A3C;
+  padding-top: 60px;
+}
+.footer__box {
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid rgb(255, 255, 255, .35);
+}
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+.footer-column__caption {
+  font-size: 18px;
+  color: #7DD42F;
+  margin-bottom: 34px;
+}
+.footer-column__link {
+  position: relative;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+.footer-column__link:after {
+  content: '';
+  display: block;
+  position: absolute;
+  margin-top: 10px;
+  width: 100%;
+  height: 3px;
+  opacity: 0;
+  transition: .1s linear
+}
+.footer-column__link:hover:after {
+  content: '';
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  height: 3px;
+  background-color: #7DD42F;
+  opacity: 1;
+  transition: .1s linear
+}
+.icon {
+  display: inline-flex;
+  margin-right: 35px;
+}
+.icon:last-child {
+  margin-right: 0px;
+}
+.icon:hover {
+  transition: .2s linear;
+}
+.icon--facebook {
+  background: url(../img/facebook.svg) no-repeat;
+  width: 11px;
+  height: 20px;
+}
+.icon--twitter {
+  background: url(../img/twitter.svg) no-repeat;
+  width: 21px;
+  height: 18px;
+}
+.icon--instagram {
+  background: url(../img/instagram.svg) no-repeat;
+  width: 19px;
+  height: 19px;
+}
+.icon--facebook:hover {
+  background: url(../img/facebook-hover.svg) no-repeat;
+}
+.icon--twitter:hover {
+  background: url(../img/twitter-hover.svg) no-repeat;
+}
+.icon--instagram:hover {
+  background: url(../img/instagram-hover.svg) no-repeat;
+}
+.footer__copyright {
+  display: flex;
+  justify-content: space-between;
+  line-height: 19px;
+  padding: 19px 0px 25px;
+  color: #ffffff;
 }
