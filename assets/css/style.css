@@ -78,6 +78,7 @@
 .menu__link,
 .user {
   color: rgb(255, 255, 255, 0.5);
+  transition: .2s linear;
 }
 .menu__link:last-child {
   margin-right: 37px;
@@ -121,14 +122,14 @@
   width: 215px;
   padding: 15px;
   color: rgb(255, 255, 255, .75);
+  transition: .2s linear;
 }
 .submenu__item--games {
   width: 202px;
 }
 .submenu__item:hover {
-  transition: .1s linear;
-  color: rgb(255, 255, 255, 1);
-  text-decoration: underline;
+  transition: .2s linear;
+  color: #ffd700;
 }
 .submenu__list>li:hover .subsubmenu__list {
   display: block; 
@@ -143,9 +144,10 @@
   padding: 15px;
   border-bottom: 1px solid;
   color: #12127a;
+  transition: .2s linear;
 }
 .subsubmenu__item:hover {
-  transition: .1s linear;
+  transition: .2s linear;
   color: #0000b1;
   background-color: #8DD83D;
 }
@@ -156,6 +158,7 @@
   margin-right: 29px;
   border: 1px solid #cccccc;
   border-radius: 4px;
+  transition: .2s linear;
 }
 .search__field::placeholder {
   opacity: 0.4;
@@ -197,6 +200,9 @@
   flex-direction: column;
   min-width: 220px;
 }
+.submenu__list--account .submenu__item {
+  border-bottom: 1px solid #0000b1;
+}
 /* ============
                 intro 
                         ========== */
@@ -237,6 +243,7 @@
   color: #ffffff;
   background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
   border-radius: 4px;
+  transition: .2s linear;
 }
 .intro__link {
   min-width: 138px;
@@ -246,6 +253,27 @@
 .link:hover {
   transition: .2s linear;
   background: #8DD83D;
+}
+.slideshow {
+  display: flex;
+  position: absolute;
+  left: 50%;
+  bottom: -20%;
+}
+.bar {
+  display: inline-flex;
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  border: 1px solid #8DD83D;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: .2s linear;
+}
+.bar:hover {
+  background-color: #8DD83D;
+  transition: .2s linear;
 }
 /* ============
                 highligts 
@@ -333,6 +361,7 @@
   background: #8DD83D;
   border-radius: 4px;
   color: #ffffff;
+  transition: .2s linear;
 }
 .active__link:hover {
   transition: .2s linear;
@@ -373,6 +402,7 @@
 }
 .games__column {
   margin-right: 29px;
+  transition: .5s;
 }
 .games__column:hover {
   transition: .5s;
@@ -475,6 +505,7 @@
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
+  transition: .2s linear;
 }
 .footer-column__link:after {
   content: '';
@@ -484,7 +515,7 @@
   width: 100%;
   height: 3px;
   opacity: 0;
-  transition: .1s linear
+  transition: .2s linear;
 }
 .footer-column__link:hover:after {
   content: '';
@@ -494,11 +525,12 @@
   height: 3px;
   background-color: #7DD42F;
   opacity: 1;
-  transition: .1s linear
+  transition: .2s linear
 }
 .icon {
   display: inline-flex;
   margin-right: 35px;
+  transition: .2s linear;
 }
 .icon:last-child {
   margin-right: 0px;
