@@ -321,11 +321,18 @@
   border: 1px solid #8DD83D;
   border-radius: 4px;
 }
+.column img {
+  margin-bottom: 20px;
+}
 .highlights__column:not(:last-child) {
   margin-right: 64px;
 }
-.column img {
-  margin-bottom: 20px;
+.highlights__column {
+  transition: .5s linear;
+}
+.highlights__column:hover {
+  transform: scale(1.1);
+  transition: .5s linear;
 }
 .highlights__column--mixer img,
 .highlights__column--gwg img {
