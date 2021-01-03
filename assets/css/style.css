@@ -208,19 +208,19 @@
                         ========== */
 .intro {
   color: #ffffff;
-}                       
-.intro img {
-  position: absolute;
-  width: 100%;
-  z-index: -1;
-}
+  background: url(../img/star-wars-2.jpg) no-repeat;
+  background-size: cover;
+}       
+.intro__inner {
+  display: flex;
+  justify-content: flex-end;
+}                
 .intro__block {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  min-height: 765px;
-  margin-left: 60%;
+  padding: 206px 0px 147px 0px;
 }
 .intro__caption {
   margin-bottom: 12px;
@@ -239,6 +239,9 @@
   line-height: 24px;
   color: rgb(255, 255, 255, 0.7);
 }
+.intro__links {
+  display: flex;
+}
 .link {
   color: #ffffff;
   background: linear-gradient(180deg, #686C6F 0%, #373A3C 100%);
@@ -246,9 +249,14 @@
   transition: .2s linear;
 }
 .intro__link {
+  display: flex;
+  align-items: center;
   min-width: 138px;
   min-height: 38px;
   padding: 8px 24px 9px 19px;
+}
+.intro__link:not(:last-child) {
+  margin-right: 10px;
 }
 .link:hover {
   transition: .2s linear;
@@ -256,14 +264,13 @@
 }
 .slideshow {
   display: flex;
-  position: absolute;
-  left: 50%;
-  bottom: -20%;
+  justify-content: center;
+  padding-bottom: 43px;
 }
 .bar {
   display: inline-flex;
-  width: 10px;
-  height: 10px;
+  width: 11px;
+  height: 11px;
   background-color: #ffffff;
   border-radius: 20px;
   border: 1px solid #8DD83D;
@@ -278,22 +285,26 @@
 .bar1 {
   background-color: #8DD83D;
 }
+.slideshow input {
+  cursor: pointer;
+  opacity: 0;
+}
 /* ============
                 highligts 
                         ========== */
 .highlights {
-  min-height: 865px;
   background: radial-gradient(100% 100% at 50% 0%, #686C6F 0%, #373A3C 100%);
 }
 .highlights__block {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 64px 0px 162px 0px;
 }
 .highlights__headline {
   display: flex;
   flex-direction: column;
-  margin: 64px 0px 42px;
+  margin-bottom: 42px;
 }
 .highlights__headline img {
   margin-bottom: 16px;
@@ -413,6 +424,7 @@
 .games__column {
   margin-right: 29px;
   transition: .5s;
+  text-align: start;
 }
 .games__column:hover {
   transition: .5s;
