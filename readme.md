@@ -1,4 +1,4 @@
 # Игровой макет
 Новые возможности. Выпадающее меню с использованием CSS, улучшения при помощи JavaScript. Адаптивность и вариативность выбора.
 
-[Demo](https://hades-corp.github.io/Xbox/ "Xbox") 
+[Demo](https://MichaelLegedza.github.io/Xbox/ "Xbox") 
